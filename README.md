@@ -6,7 +6,10 @@
     - data.csv
 > experiment NoteBook
     - experiment.ipynb
-
+> SRC
+> template
+- README.md
+- Project Documentation
 ! STAGE 1
 #### Do EDA Task --> In Experiment.ipynb
 
