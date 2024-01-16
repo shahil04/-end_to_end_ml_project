@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Maths Score Prediction</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #000502;
+            margin-bottom: 30px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .predict-button {
+            position: absolute;
+            top: 46%;
+            left: 37%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            font-size: 28px;
+            background-color: #000804;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .predict-button:hover {
+            background-color: #27ae60;
+        }
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Maths Score Prediction</h1>
+        <h2>Welcome to our prediction app</h2>
+    </header>
+
+    <div class="container">
+        <a href="prediction" class="predict-button">Predict Now</a>
+        <img src="{{ url_for('static', filename='image.png') }}" alt="Machine Learning Image">
+        <p>This app uses machine learning to predict student math scores. We analyze various factors to provide accurate predictions for students' performance.</p>
+    </div>
+<br>
+    <footer>
+        &copy; 2024 Student Maths Score Prediction
+    </footer>
+</body>
+</html>
